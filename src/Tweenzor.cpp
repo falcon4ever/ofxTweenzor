@@ -307,11 +307,13 @@ Tween* Tweenzor::getRecentTween() {
 	if (__instance->_tweens.size() > 0) {
 		return &__instance->_tweens[__instance->_tweens.size() - 1];
 	}
+
+	return 0;
 }
 
 //--------------------------------------------------------------
 int Tweenzor::getSize() {
-	__instance->_tweens.size();
+	return __instance->_tweens.size();
 }
 
 
